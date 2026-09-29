@@ -1,105 +1,177 @@
-# 🎓 CampusHub — College Club Event Management Web App
+<div align="center">
 
-> A modern, responsive web application designed for students and administrators to discover, organize, and manage college club events and registrations with ease.
+# 🎓 CampusHub — College Club & Event Management Platform
 
----
+[![React](https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-8.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![React Router](https://img.shields.io/badge/React_Router-v6-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://reactrouter.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
 
-## 🚀 Live Demo & Repository
-- **GitHub Repository**: `https://github.com/<your-username>/clubora`
-- **Live Deployment**: `https://<your-project>.vercel.app`
+<p align="center">
+  <strong>A high-performance, glassmorphic web application built to streamline college club discovery, event ticketing, student registrations, and administrative control in one unified ecosystem.</strong>
+</p>
 
----
+[Explore Live Demo](https://clubora.vercel.app) • [Report Bug](https://github.com/theanshukr/clubora/issues) • [Request Feature](https://github.com/theanshukr/clubora/issues)
 
-## 📋 Features Checklist (100% Implemented)
-
-### 👨‍🎓 1. Student / User Side
-- [x] **Home Page**:
-  - **Club Introduction**: Visual introduction to student clubs and campus societies.
-  - **Featured Event**: Hero banner highlighting key flagship campus events.
-  - **Upcoming Events**: Real-time listing and card carousel of upcoming activities.
-  - **Categories Showcase**: Filter & jump directly into Technical, Cultural, Sports, and Workshops.
-- [x] **Events Page**:
-  - Grid list of all campus events with high-resolution imagery.
-  - **Event Cards Details**: Name, Date & Time, Venue, Short Description, Category badge, and "Register" button.
-  - **Search & Filter**: Real-time instant search by event name/venue and category filtering (Technical, Cultural, Sports, Workshop, Competition, Seminar).
-- [x] **Event Detail Page**:
-  - Full event agenda, description, organizer details, registration deadlines, and seat capacity.
-- [x] **Event Registration**:
-  - Registration form collecting: Student Name, Email, College/Year, and Phone Number.
-  - Form validation with instant feedback toast notifications.
-  - Automatic synchronization with the Admin Registrations roster.
-- [x] **Clubs Directory & Detail Pages**:
-  - Showcase for individual campus clubs with leadership, member counts, activities, and achievements.
-- [x] **Fully Responsive Design**:
-  - Optimized for mobile, tablet, and desktop screens with custom touch navigation drawers and responsive grids.
+</div>
 
 ---
 
-### 🛡️ 2. Admin Side
-- [x] **Admin Dashboard Overview**:
-  - High-level metric cards: Total Events, Active Campus Clubs, Total Registrations, and Active Categories.
-  - Top Events ranked by student participation and capacity fill rate.
-- [x] **Event Management (CRUD)**:
-  - **Add an Event**: Create new events with name, category, date, time, venue, description, cover image, and capacity.
-  - **Edit an Event**: Update any existing event details in real-time.
-  - **Delete an Event**: Safe deletion with confirmation modal.
-  - **Duplicate Event**: Clone existing events into drafts with 1-click.
-  - **Draft / Published Toggle**: Live publication visibility control.
-- [x] **Club Management**:
-  - Create, edit, and manage student clubs, leadership details, member counts, and public club links.
-- [x] **Student Registrations Management**:
-  - View all registered students with contact info and timestamps.
-  - Live search across student name, email, and event name.
-  - Filter by event and approval status (Approved, Pending, Rejected).
-  - **CSV Export**: One-click download of registration data.
+## 📌 Executive Summary
+
+**CampusHub** bridges the gap between college clubs and the student body. Built with modern web standards, it delivers an intuitive experience for students to browse upcoming events and register seamlessly, while empowering club administrators with an **HR-grade Admin Control Center** to manage events, leadership rosters, participation analytics, and CSV report exports.
 
 ---
 
-## 🛠️ Tech Stack
+## ✨ Key Features & Capabilities
 
-- **Frontend**: React 18, TypeScript, Vite
-- **Routing**: React Router DOM (v6)
-- **Styling**: Vanilla CSS with modern Glassmorphism, CSS Custom Properties, and responsive flex/grid utilities
-- **Icons**: Material Symbols & Custom SVG Vector Icons
-- **Typography**: Google Fonts (Geist, Poppins, Righteous)
+### 👨‍🎓 1. Student / Public Experience
 
----
-
-## 💻 Local Setup & Installation
-
-### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn
-
-### Steps to Run Locally
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/<your-username>/clubora.git
-   cd clubora/frontend
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**:
-   ```bash
-   npm run dev
-   ```
-
-4. **Access the application**:
-   - **Local Browser**: `http://localhost:3000/campushub`
-   - **Admin Dashboard**: `http://localhost:3000/campushub/admin`
-   - **Mobile Testing (Same Wi-Fi)**: `http://<your-ip-address>:3000/campushub`
-
-5. **Build for Production**:
-   ```bash
-   npm run build
-   ```
+| Feature | Description |
+| :--- | :--- |
+| **🎪 Dynamic Home Experience** | Hero banner showcasing flagship events, interactive upcoming event carousels, and club spotlights. |
+| **🔍 Real-Time Search & Category Filters** | Instant search by event name or venue, with category pills (*Technical, Cultural, Sports, Workshop, Seminar, Competition*). |
+| **🎟️ Comprehensive Event Details** | Full agenda, time, venue, seat availability indicators, and registration deadlines. |
+| **📝 Frictionless Event Registration** | Validated registration flow with Indian phone format validation and instant confirmation feedback. |
+| **👥 Dedicated Club Pages** | Profiles for student clubs featuring leadership info, active member counts, gallery, and past achievements. |
+| **📱 100% Mobile Responsive** | Custom mobile slide drawer navigation, touch-friendly horizontal swipe tables, and fluid typography. |
 
 ---
 
-## 📱 Mobile Testing
-The app is fully mobile-responsive. When running `npm run dev`, Vite exposes the network host so you can test directly on your mobile device by visiting `http://<YOUR_LOCAL_IP>:3000/campushub`.
+### 🛡️ 2. Admin & Organization Suite
+
+| Feature | Description |
+| :--- | :--- |
+| **📊 Real-Time Analytics Dashboard** | At-a-glance KPI cards tracking Total Events, Active Clubs, Total Registrations, and Category metrics. |
+| **⚡ Event Lifecycle Management (CRUD)** | Create, edit, clone/duplicate, and delete events with customizable banner images and capacities. |
+| **👁️ Live Draft vs. Published Toggle** | One-click publication visibility switcher to stage events before going live. |
+| **🏢 Campus Clubs Directory** | Manage registered campus organizations, update president/leads, member counts, and contact emails. |
+| **📋 Registration Roster & Approval Status** | Search, filter by event or status (*Approved, Pending, Rejected*), and change applicant status inline. |
+| **📥 Instant CSV Export** | Export formatted student registration sheets for offline attendance and record keeping. |
+
+---
+
+## 🏗️ Architecture & Technology Stack
+
+```
+Frontend Architecture (SPA)
+├── React 18 (Component Architecture & Hooks)
+├── TypeScript (Type Safety & Interfaces)
+├── React Router DOM v6 (Declarative Client-side Routing)
+├── CSS3 Custom Properties (Design Tokens & Glassmorphism)
+└── Vite (Lightning-fast HMR & Production Bundling)
+```
+
+- **Styling Philosophy**: Custom Glassmorphism UI with multi-layered backdrop blurs, animated fluid ambient background blobs, and sleek dark-mode aesthetics.
+- **State Management**: Reactive local state stores with synchronous URL route syncing for persistent navigation.
+- **Icons & Typography**: Material Symbols, Geist, Poppins, and Righteous display typography.
+
+---
+
+## 📂 Project Directory Structure
+
+```
+clubora/
+├── README.md                      # Comprehensive project documentation
+├── .gitignore                     # Git ignore rules for node_modules and builds
+└── frontend/
+    ├── package.json               # Dependencies and scripts
+    ├── vite.config.ts             # Vite configuration with network host
+    ├── tsconfig.json              # TypeScript root configuration
+    ├── index.html                 # HTML5 template entry point
+    └── src/
+        ├── App.tsx                # App routing & lazy-loaded suspense wrapper
+        ├── main.tsx               # DOM mount point
+        ├── index.css              # Global tokens, glassmorphism, & responsive media queries
+        ├── data/
+        │   └── campusHubData.ts   # Core data types, seed events, and category configurations
+        └── components/
+            └── campushub/
+                ├── CampusHubHome.tsx         # Public landing page & featured showcase
+                ├── CampusHubEvents.tsx       # Searchable events catalog
+                ├── CampusHubEventDetail.tsx  # Detailed event page
+                ├── CampusHubRegister.tsx     # Student registration form
+                ├── CampusHubClubs.tsx        # Club showcase & detail views
+                ├── CampusHubAdmin.tsx        # Full-featured Admin Control Center
+                ├── CampusHubLayout.tsx       # Header nav, mobile drawer, & footer layout
+                ├── CampusHubLogo.tsx         # Isometric 3D SVG brand mark
+                └── EventCard.tsx             # Reusable event card component
+```
+
+---
+
+## ⚡ Getting Started & Local Development
+
+### 1. Prerequisites
+- **Node.js** >= `18.x`
+- **npm** >= `9.x` (or `pnpm` / `yarn`)
+- **Git**
+
+### 2. Clone and Install
+
+```bash
+# Clone the repository
+git clone https://github.com/theanshukr/clubora.git
+
+# Navigate to the frontend directory
+cd clubora/frontend
+
+# Install dependencies
+npm install
+```
+
+### 3. Run Development Server
+
+```bash
+npm run dev
+```
+The server will boot up at:
+- **Local**: `http://localhost:3000/campushub`
+- **Admin Panel**: `http://localhost:3000/campushub/admin`
+- **Network (Mobile Testing on Same Wi-Fi)**: `http://<YOUR_LOCAL_IP>:3000/campushub`
+
+### 4. Build for Production
+
+```bash
+npm run build
+```
+Creates an optimized production bundle in `frontend/dist/` with code-splitting and asset minification.
+
+---
+
+## 🚀 Deployment Guide
+
+### Deploying on Vercel
+1. Push your repository to GitHub.
+2. Go to [Vercel](https://vercel.com) and click **"Add New Project"**.
+3. Import the `clubora` repository.
+4. Set the **Root Directory** to `frontend`.
+5. Click **Deploy**.
+
+### Deploying on Netlify
+1. Log in to [Netlify](https://netlify.com) and click **"Add new site" > "Import an existing project"**.
+2. Select your `clubora` repository.
+3. Base directory: `frontend` | Build command: `npm run build` | Publish directory: `frontend/dist`.
+4. Click **Deploy Site**.
+
+---
+
+## 📱 Mobile Testing & Device Verification
+
+The application is engineered with mobile-first responsiveness:
+- **Navigation Drawer**: Collapsible responsive hamburger menu for viewports `< 860px`.
+- **Touch-Friendly Tables**: Scrollable table containers (`table-responsive`) that prevent viewport overflow on smaller screens.
+- **Card Layouts**: Auto-collapsing grid systems adjusting seamlessly from 4-columns down to 1-column on smartphones.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+  <sub>Designed & Developed with ❤️ for Campus Communities.</sub>
+</div>
