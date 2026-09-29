@@ -12,7 +12,7 @@
   <strong>A high-performance, glassmorphic web application built to streamline college club discovery, event ticketing, student registrations, and administrative control in one unified ecosystem.</strong>
 </p>
 
-[Explore Live Demo](https://clubora.vercel.app) • [Report Bug](https://github.com/theanshukr/clubora/issues) • [Request Feature](https://github.com/theanshukr/clubora/issues)
+[Explore Live Demo](https://clubora-tawny.vercel.app/campushub) • [Report Bug](https://github.com/theanshukr/clubora/issues) • [Request Feature](https://github.com/theanshukr/clubora/issues)
 
 </div>
 
@@ -21,6 +21,12 @@
 ## 📌 Executive Summary
 
 **CampusHub** bridges the gap between college clubs and the student body. Built with modern web standards, it delivers an intuitive experience for students to browse upcoming events and register seamlessly, while empowering club administrators with an **HR-grade Admin Control Center** to manage events, leadership rosters, participation analytics, and CSV report exports.
+
+---
+
+## 🚀 Live Links
+- **🌐 Live Website**: [https://clubora-tawny.vercel.app/campushub](https://clubora-tawny.vercel.app/campushub)
+- **🐙 GitHub Repository**: [https://github.com/theanshukr/clubora](https://github.com/theanshukr/clubora)
 
 ---
 
